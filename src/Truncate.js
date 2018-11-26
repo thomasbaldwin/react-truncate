@@ -162,6 +162,7 @@ export default class Truncate extends Component {
         ].join(' ');
 
         canvasContext.font = font;
+        canvasContext.style = `letter-spacing: ${style['letter-spacing'] || 1.0};`;
 
         this.setState({
             targetWidth
